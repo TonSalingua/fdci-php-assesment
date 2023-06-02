@@ -22,7 +22,7 @@
         <tr>
             <td>{{$data->name}}</td>
             <td>{{$data->email}}</td>
-            <td><a href="lougout">Logout</a></td>
+            <td><a href="logout">Logout</a></td>
         </tr>
     </tbody>
 </table>
