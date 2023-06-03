@@ -20,22 +20,22 @@
                 <div class="alert alert-danger">{{Session::get('failed')}}</div>
                 @endif
                 @csrf
-            <div class="form-group">
+            <div class="form-group m-1">
                 <label for="name">Full Name</label>
                 <input type="text" class="form-control" placeholder="Enter Full Name" name="name" value="{{old('name')}}">
                 <span class="text-danger">@error('name'){{$message}}@enderror </span>
             </div>
-            <div class="form-group">
+            <div class="form-group m-1">
                 <label for="email">Email</label>
                 <input type="text" class="form-control" placeholder="Enter E-mail" name="email" value="{{old('email')}}">
                 <span class="text-danger">@error('email'){{$message}}@enderror </span>
             </div>
-            <div class="form-group">
+            <div class="form-group m-1">
                 <label for="password">Password</label>
                 <input type="password" class="form-control" placeholder="Enter Password" name="password" value="">
                 <span class="text-danger">@error('password'){{$message}}@enderror </span>
             </div>
-            <div class="for group">
+            <div class="for group m-2">
                 <button class="btn btn-block btn-primary" type="submit">Register</button>
             </div>
             <br>
