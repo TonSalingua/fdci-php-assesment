@@ -8,11 +8,11 @@
   </head>
   <body>
    <div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4" style="margin-top:20px">
+    <div class="row d-flex justify-content-center m-5">
+        <div class="col-md-4 col-md-offset-4 border border-primary" style="margin-top:20px">
             <h4>Registration</h4>
             <hr>
-            <form action="{{route('register-user')}}" method="post">
+            <form action="{{route('register-user')}}" method="post" style="background-color:rgb(236, 236, 227)">
                 @if(Session::has('success'))
                 <div class="alert alert-success">{{Session::get('success')}}</div>
                 @endif
