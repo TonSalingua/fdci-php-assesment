@@ -8,11 +8,11 @@
   </head>
   <body>
    <div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4" style="margin-top:20px">
+    <div class="row d-flex justify-content-center m-5">
+        <div class="col-md-4 col-md-offset-4 border border-primary" style="margin-top:20px">
             <h4>Login</h4>
             <hr>
-            <form action="{{{route('login-user')}}}" method="post">
+            <form action="{{{route('login-user')}}}" method="post" style="background-color:rgb(217, 219, 192)">
                 @if(Session::has('success'))
                 <div class="alert alert-success">{{Session::get('success')}}</div>
                 @endif
@@ -20,17 +20,17 @@
                 <div class="alert alert-danger">{{Session::get('failed')}}</div>
                 @endif
                 @csrf
-            <div class="form-group">
+            <div class="form-group m-1">
                 <label for="email">Email</label>
                 <input type="text" class="form-control" placeholder="Enter E-mail" name="email"  value="{{old('email')}}">
                 <span class="text-danger">@error('email'){{$message}}@enderror </span>
             </div>
-            <div class="form-group">
+            <div class="form-group m-1">
                 <label for="password">Password</label>
                 <input type="password" class="form-control" placeholder="Enter Password" name="password"  value="{{old('password')}}">
                 <span class="text-danger">@error('password'){{$message}}@enderror </span>
             </div>
-            <div class="for group">
+            <div class="for group m-2">
                 <button class="btn btn-block btn-primary" type="submit">Login</button>
             </div>
             <br>
