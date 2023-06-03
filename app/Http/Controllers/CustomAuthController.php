@@ -52,7 +52,7 @@ class CustomAuthController extends Controller
                 $request->session()->put('loginID', $user->id);
                 return redirect('dashboard');
             } else {
-                return back()->with('fail, login again');
+                return back()->with('success, login again');
             }
         } else {
             return back()->with('failed', 'Please Login Again');
