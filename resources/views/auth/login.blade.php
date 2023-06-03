@@ -34,7 +34,7 @@
                 <button class="btn btn-block btn-primary" type="submit">Login</button>
             </div>
             <br>
-           <a href="registration">New User? Register Here</a>
+           <a class="m-1" href="registration" style="text-decoration:none">New User? Register Here</a>
             </form>
         </div>
     </div>
