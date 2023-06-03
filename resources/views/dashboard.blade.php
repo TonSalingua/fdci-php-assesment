@@ -10,19 +10,23 @@
     <div class="container m-5 d-flex justify-content-center" style="background-color:rgb(236, 236, 227)">
         <div class="row">
           <h1>Hi User, Welcome to the Website!</h1>
-            <div class="col-md-4 col-md-offset-4 d-flex justify-content-center" style="margin-top:20px">  
+            <div class="col-md-4 col-md-offset-4" style="margin-top:20px">  
     <hr>
     <table class="table">
     <thead>
+      <th>ID#</th>
         <th>Name</th>
         <th>Email</th>
         <th>Action</th>
+        
     </thead>
     <tbody>
         <tr>
+          <td>{{$data->id}}</td>
             <td>{{$data->name}}</td>
             <td>{{$data->email}}</td>
             <td><a class="btn btn-info btn-sm" href="logout">Logout</a></td>
+            
         </tr>
     </tbody>
 </table>
